@@ -1,88 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header img{
+    width: 150px;
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header .container{
+    display: flex;
+    gap: 20px;
 
-@charset "utf-8";
-
-
-
-
-
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(24, 24, 24, 0.8);
+    margin-top: 10px;
+    box-shadow: 10px 20px 20px;
+   
+}
 .box{
-	width:600px;
-	height:250px;
-	border:1px solid #ccc;
-	margin: 50px auto;
-	box-shadow: 0px 0px 9px #ccc;
-	padding: 15px;
-	box-sizing: border-box;
-	overflow: hidden;
+    width: 90px;
+    height: 90px;
 
+    border-radius: 50%;
+   cursor: pointer;
 }
-
-.pic{
-	height:100%;
-    float:left;
-    position: relative;
-    animation: pic 5s infinite;
+#box1{
+background-color: purple;
 }
-
-@keyframes pic{
-	0%{top:0;left:-200px;}
-	20%{top:0;left:0;}
-	100%{top:0;left:0;}
+#box2{
+    background-color: lime;
 }
-
-
-.phone{
-	float:left;
-	font-family: sans-serif;
-	position: relative;
-	animation: phone 5s infinite;
-	animation-delay: 0.2s;
-
+#box3{
+    background-color: red;
 }
-
-@keyframes phone{
- 0%{top:-200px;left:0;}
- 20%{top:0;left:0;}
- 100%{top:0;left:0;}
-
+#box4{
+    background-color: blue;
 }
-
-.rate{
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-	float:left;
-	margin-left: 100px;
-	font-size: 30px;
-	position: relative;
-	animation: rate 5s infinite;
-	animation-delay: 1.1s;
+#box5{
+    background-color:yellow;
 }
-
-@keyframes rate{
-	0%{top:0;right:-200px;}
-	20%{top:0;right:0;}
-	100%{top:0;right:0;}
+h1,h3{
+    font-size: 37px;
+    font-weight: 1000;
+    
 }
-
-
-.btn{
-	width:150px;
-	height:50px;
-	background-color: white;
-	border:1px solid #ccc;
-	float: left;
-	margin-left: 130px;
-	margin-top: 20px;
-	position: relative;
-	animation: btn 5s infinite;
-	animation-delay: 2s;
+p{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
 }
-
-@keyframes btn{
-	0%{left:0;bottom:-200px;}
-	20%{left:0;bottom:0;}
-	100%{left:0;bottom:0;}
-}
-
-
