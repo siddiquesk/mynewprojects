@@ -1,51 +1,33 @@
 <!DOCTYPE html>
 <html>
-<meta lang="en">
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTf-8">
+<meta lang="en-US">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">	
 <title>
-	video player
+mobile animation
 </title>
-<link rel="stylesheet"  href="style.css">
+<link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
-<header>
-	<h1>STP VIDEO PLAYER</h1>
-</header>
-<section>
-	<video src="one.mp4" width="100%" height="400" id="vdo"></video>
-</section>
+
+<div class="box">
+	<img src="mob.png" alt="nokiya" class="pic">
+	<h1 class="phone">NOKIYA SMARTPHONES</h1>
+	<h2 class="rate">START from 4999/-</h2>
+	<button class="btn">BUY NOW</button>
+</div>
 
 
-<footer>
-	<button id="ubtn">
-		Upload 
-		<input type="file" accept="mp4" id="vupload" onchange="upload()">
-	</button>
-	<button id="play" onclick="vplay()">Play</button>
-	<button id="pause" onclick="vpause()">Pause</button>
-</footer>
 
-<script>
-	function vplay(){
-		let a=document.getElementById("vdo");
-		a.play();
-	}
-		function vpause(){
-		let b=document.getElementById("vdo");
-		b.pause();
-	}
-	function upload() {
-		let a=document.getElementById("vupload").value.replace(/.*(\/|\\)/,'');
-		let b=document.getElementById("vdo");
-		b.src=a;
 
-	}
-	
-</script>
 
-</body>
+
+
+
+
+
+		</body>
 </html>
